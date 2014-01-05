@@ -1,0 +1,5 @@
+This Python code is intended to take a range of IPs and scan them for open SOCKS 4 and 5 proxies 
+
+* Works for finding both HTTP and HTTPS proxies
+* IP range is generated in a "simple" fashion, meaning that each octal is generated separately w.r.t. the start and stop given by the user: 127.0.0.1, 127.0.0.254 will return expected results, but 127.0.0.1, 127.0.1.1 will only return those two addresses
+  * For all of the /16 addresses of the above example use 127.0.0.1, 127.0.1.254
